@@ -1,0 +1,76 @@
+.categories__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.categories__item {
+  margin-bottom: 15px;
+  background: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  flex-basis: 32%;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  transition-duration: 500ms;
+  transition-property: box-shadow;
+
+
+  &:hover {
+
+    box-shadow: (3px 3px 20px rgba(0, 0, 0, 0.25));
+
+    .categories__item-title {
+      color: #1c62cd;
+
+    }
+  }
+}
+
+.categories__item-title {
+  transition-duration: 500ms;
+  transition-property: color;
+}
+
+.categories__item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 5px;
+
+  h4 {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 28px;
+  }
+
+
+.categories__item-text {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+
+  &::after {
+    content: url("../img/link-arrow.svg");
+    padding-left: 2px;
+  }
+}
+
+
+
+}
+
+.categories__item-img {
+  text-align: center;
+  flex-basis: 50%;
+}
+
+
+
+

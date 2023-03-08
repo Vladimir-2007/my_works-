@@ -1,0 +1,93 @@
+$hamburgercolor: #e9eae2;
+
+.hamburger {
+  background: none;
+  display: block;
+  cursor: pointer;
+  border: 3px solid $hamburgercolor;
+  transition-duration: 500ms;
+  transition-property: border-color;
+
+  &:hover, &:active {
+    border-color: $navcolor;
+
+    .hamburger_element {
+      background-color: $navcolor;
+
+
+      &::after, &::before {
+        background-color: $navcolor;
+      }
+    }
+  }
+
+  &:focus {
+    border-color: $navcolor;
+  }
+}
+
+.hamburger_element {
+  width: 40px;
+  height: 3px;
+  background-color: $hamburgercolor;
+  display: block;
+  margin: 0 auto;
+  transition-duration: 500ms;
+  transition-property: background-color;
+
+
+  &::before, &::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: $hamburgercolor;
+    display: block;
+    margin: 0 auto;
+    transition-duration: 500ms;
+    transition-property: background-color;
+
+
+    }
+
+  &::after {
+    transform: translateY(4px);
+  }
+
+  &::before {
+    transform: translateY(-7px);
+  }
+
+}
+
+.hamburger-active {
+  position: relative;
+  z-index: 1;
+  border-color: $navcolor;
+
+  &:hover, &:active {
+    border-color: $navcolor;
+
+    .hamburger_element {
+      background-color: $hamburgercolor;
+
+
+      &::after, &::before {
+        background-color: $hamburgercolor;
+      }
+    }
+  }
+
+  .hamburger_element {
+    transform: rotate(45deg);
+
+    &::after {
+      transform: rotate(90deg);
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+//@charset "UTF-8";
+//
+///**
+// * Основные стили
+// **/
+//
+//html {
+//	font-size: 16px;
+//}
+//
+//body {
+//	font-family: 'Roboto', 'Arial', sans-serif;
+//	overflow-wrap: break-word;
+//	word-wrap: break-word;
+//}
+//
+//.container {
+//	@include min-max(320px, 100%, 0);
+//}
+//
+//.wrap {
+//	@include min-max(320px, 1200px, 15px);
+//}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+body {
+	color: #2f3035;
+	font-family: 'SFProDisplay-Regular', sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+
+a {
+  //color: #2f3035;
+}
+
+.header__bottom {
+	margin-bottom: 80px;
+}
+
+.page__section {
+	margin-bottom: 80px;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}

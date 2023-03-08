@@ -1,0 +1,110 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+}
+
+.header_left {
+  grid-column: span 11;
+  padding-left: 15.9%;
+  padding-top: 4.5%;
+  padding-bottom: 8.7%;
+  background: url("../img/image1.png") 100% center no-repeat;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url('../img/image1-2x.png');
+  }
+}
+
+
+.header_right {
+  grid-column: span 5;
+  padding-right: 15.9%;
+  padding-top: 4.5%;
+  padding-bottom: 8.7%;
+}
+
+.header_logo {
+  display: block;
+  max-width: 100%;
+}
+
+.header_slogan {
+  font-size: 18px;
+  color: $colorText;
+  text-transform: uppercase;
+  line-height: 1;
+
+  @media (min-width: 1500px) {
+    @include dynamictext(112.5%, 36, 18, 1500px, 3000, 1500)
+  }
+
+}
+
+.header_socials {
+  margin-top: 60px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.header_right {
+  background-color: $second;
+  position: relative;
+  padding-top: 10.7%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" hight="100%"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1"/></svg>');
+  }
+}
+
+.header_adress {
+  font-size: 13px;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1.077;
+  position: absolute;
+  left: 12.9%;
+  bottom: 36.5%;
+  margin: 0;
+
+  @media (min-width: 1500px) {
+    @include dynamictext(81.25%, 26, 13, 1500px, 3000, 1500)
+  }
+
+}
+
+.header_contacts {
+  font-size: 13px;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1.077;
+  position: absolute;
+  left: 29%;
+  bottom: 20%;
+  margin: 0;
+
+  @media (min-width: 1500px) {
+    @include dynamictext(81.25%, 26, 13, 1500px, 3000, 1500)
+  }
+
+}
+
+.header_tel, .header_mail {
+  color: $white;
+  line-height: 1.077;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 500ms;
+  transition-property: color;
+
+
+  &:hover {
+    color: $activTextColor;
+  }
+}

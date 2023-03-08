@@ -1,0 +1,72 @@
+.responsive_wrap {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url("../img/bg-two.png") left bottom no-repeat;
+}
+
+.responsive_information {
+  max-width: 360px;
+  margin-left: auto;
+}
+
+.responsive_titile {
+  font-size: 30px;
+  font-family: "Raleway";
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-align: left;
+  margin: 25px 0;
+  position: relative;
+
+  &:before {
+    content: '';
+    background-color:$color_line;
+    position: absolute;
+    left: 0;
+    top: -25px;
+    width: 70px;
+    height: 2px;
+  }
+}
+
+.responsive_text {
+  font-size: 14px;
+  color: $responsive_text;
+  line-height: 1.1;
+  margin: 20px 0;
+}
+
+.responsive_list {
+  margin: 20px 0;
+}
+
+.responsive_button {
+  @include button($thirty);
+
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+
+  .responsive_wrap {
+    background-image: none;
+  }
+
+  .responsive_information {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .responsive_wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+
+}

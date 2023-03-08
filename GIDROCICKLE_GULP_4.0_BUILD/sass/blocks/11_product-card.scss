@@ -1,0 +1,142 @@
+
+.product__card-inner {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.product__card-img-box {
+  width: 500px;
+  padding-top: 64px;
+  text-align: center;
+  position: relative;
+}
+
+.product__card-img-box::before {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  padding: 13px 25px;
+  border-radius: 3px;
+}
+
+.product__card-img {
+  width: 100%;
+}
+
+.product__card-price-old {
+  line-height: 40px;
+  color: #2f3035;
+  opacity: 0.6;
+  font-size: 30px;
+  font-family: 'Barlow', sans-serif;
+  display: inline-block;
+  margin-bottom: 15px;
+  background-image: url("../img/line-old.svg") ;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.product__card-price-new {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 30px;
+  margin-bottom: 18px;
+}
+
+.product__card-link {
+  border-bottom: 1px solid #1c62cd;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1c62cd;
+}
+
+.product__card-content {
+  width: 570px;
+}
+
+.product__card-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: 'SFProDisplay-Bold', sans-serif;
+  margin-bottom: 10px;
+}
+
+.product__card-code {
+  font-size: 15px;
+  line-height: 18px;
+  color: #2F3035;
+  opacity: 0.6;
+  margin-bottom: 22px;
+}
+
+.product__card-buttons {
+  margin-bottom: 50px;
+}
+
+.product__card-tab {
+  font-size: 20px;
+  line-height: 24px;
+  color: #2F3035;
+  opacity: 0.6;
+  padding-bottom: 5px;
+  padding-right: 17px;
+  margin-bottom: 5px;
+}
+
+.product__card-tab + .product__card-tab {
+  padding-left: 17px;
+}
+
+.product__card-tab.tab__active {
+  opacity: 1;
+  border-bottom: 2px solid #1c62cd;
+  font-weight: bold;
+  font-family: 'SFProDisplay-Bold', sans-serif;
+}
+
+.product__card-item {
+  padding: 15px 0 6px;
+  border-bottom: 1px solid rgba(47, 48, 50, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__car-item-left {
+  padding-right: 15px;
+}
+
+.product__car-item-right {
+  width: 125px;
+}
+
+.product__card-more {
+  font-size: 14px;
+  line-height: 17px;
+  color: #1c62cd;
+  //text-decoration: underline;
+  border-bottom: 1px solid #1c62cd;
+  margin-bottom: 40px;
+}
+
+.product__card-list {
+  margin-bottom: 20px;
+}
+
+.product__card-btn button {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 16px 56px;
+  background: #1c62cd;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.product__card-buttons a + a {
+  margin-left: 30px;
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import '1_variables';
+@import '2_fonts';
+@import '3_reset';
+
+@import 'blocks/1_overlay';
+@import 'blocks/2_modal';
+@import 'blocks/3_notification_toast';
+@import 'blocks/4_headerr';
+@import 'blocks/5_bunner';
+@import 'blocks/6_category';
+@import 'blocks/7_sidebar';
+@import 'blocks/8_product_minimal';
+@import 'blocks/9_product_featured';
+@import 'blocks/10_product_grid';
+@import 'blocks/11_testim_cta_blog.scss';
+@import 'blocks/12_footer.scss';

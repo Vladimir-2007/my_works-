@@ -1,0 +1,36 @@
+.header {
+  border-bottom: 4px solid $red_second;
+}
+
+.header_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding:  55px 0;
+}
+
+.header_logo {
+  margin-right: 20px;
+}
+
+.header_menu {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+
+  .header_wrap {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .header_logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+}

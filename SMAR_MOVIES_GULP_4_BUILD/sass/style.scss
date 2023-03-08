@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@import "normalize";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/1_header";
+@import "blocks/2_menu";
+@import "blocks/3_banner";
+@import "blocks/4_advanteges";
+@import "blocks/5_works";
+@import "blocks/6_responsive";
+@import "blocks/7_list";
+@import "blocks/8_skills";
+@import "blocks/9_progress";
+@import "blocks/10_blog";
+@import "blocks/11_clients";
+@import "blocks/12_contacts";
+@import "blocks/13_form";
+@import "blocks/14_footer";
+@import "blocks/carousel/owl.carousel";
+@import "blocks/carousel/owl.theme.default";
+
+
+

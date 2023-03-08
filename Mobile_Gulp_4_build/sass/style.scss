@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@import "normalize";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/1_header";
+@import "blocks/2_fixed";
+@import "blocks/3_advantages";
+@import "blocks/4_projects";
+@import "blocks/5_details";
+@import "blocks/6_list_of_works";
+@import "blocks/7_calculator";
+@import "blocks/8_calc";
+@import "blocks/9_contacts";
+@import "blocks/10_menu";
+@import "blocks/11_scroll_down";
+@import "blocks/12_main_menu";

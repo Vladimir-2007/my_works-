@@ -1,0 +1,58 @@
+.skills {
+  background-color: $red_second;
+}
+
+.skills_wrap {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+ }
+
+.skills_left {
+  flex-basis: 280px;
+  margin-right: 115px;
+}
+
+.skills_right {
+  flex-grow: 1;
+}
+
+.skills_title {
+  font-size: 30px;
+  font-family: 'Raleway';
+  color: $white;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 20px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: $white;
+    position: absolute;
+    left: 0;
+    top: -25px;
+    width: 70px;
+    height: 2px;
+  }
+
+}
+
+.skills_text {
+  font-size: 14px;
+  color: $white;
+  line-height: 1.429;
+  margin: 20px 0;
+
+}
+
+.skills_button {
+  @include button($primary) {
+    margin-top: 50px;
+  }
+}
+
+.skills_progress {
+  margin: 20px 0;
+}

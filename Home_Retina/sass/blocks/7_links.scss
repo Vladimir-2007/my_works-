@@ -1,0 +1,28 @@
+.links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links_link {
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding-left: 25px;
+  transition-duration: 500ms;
+  transition-property: color, background;
+
+  @media (min-width: 1500px) {
+    @include dynamictext(81.25%, 26, 13, 1500px, 3000, 1500)
+  }
+
+
+  &:hover {
+    color: $black;
+    background: url("../img/arrow.svg") left center no-repeat;
+  }
+}

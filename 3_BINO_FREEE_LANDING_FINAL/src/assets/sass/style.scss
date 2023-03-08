@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+@import "animations";
+
+
+
+@import "blocks/1_section-top";
+@import "blocks/2_menu";
+@import "blocks/3_buttons";
+@import "blocks/4_devider";
+@import "blocks/5_section_wrap";
+@import "blocks/6_advantages";
+@import "blocks/7_history";
+@import "blocks/7_history";
+@import "blocks/8_servece";
+@import "blocks/9_recent";
+@import "blocks/10_case_study";
+@import "blocks/11_ideas";
+@import "blocks/12_counts";
+@import "blocks/13_price";
+@import "blocks/14_team";
+@import "blocks/15_integrations";
+@import "blocks/16_blog";
+@import "blocks/17_keep";
+@import "blocks/18_free";
+@import "blocks/19_footer";
+@import "blocks/20_social";
+@import "blocks/21_arrow_up";

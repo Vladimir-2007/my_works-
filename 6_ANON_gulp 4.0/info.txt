@@ -1,0 +1,2 @@
+nvm use 12.10.0
+gulp

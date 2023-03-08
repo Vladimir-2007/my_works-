@@ -1,0 +1,25 @@
+.list {
+  font-size: 14px;
+  color: $discription_color;
+  line-height: 1.28;
+  list-style: none;
+  padding: 0;
+}
+
+.list_element {
+  margin: 15px 0;
+  padding-left: 55px;
+  position: relative;
+
+
+  &::before {
+    content: '';
+    width: 8px;
+    height: 2px;
+    background-color: $red_second;
+    position: absolute;
+    left: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

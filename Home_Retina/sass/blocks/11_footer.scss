@@ -1,0 +1,157 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer_left {
+  margin-left: 15.3%;
+  margin-top: 20%;
+}
+
+.footer_right {
+  margin-right: 22%;
+  margin-top: 20%;
+}
+
+.footer_map {
+  grid-column: span 1;
+  background-color: yellow;
+}
+
+.footer_info {
+  grid-column: span 1;
+}
+
+.footer_logo {
+  display: block;
+  max-width: 100%;
+}
+
+.footer_slogan {
+  font-size: 18px;
+  color: $colorText;
+  text-transform: uppercase;
+  line-height: 1;
+
+  @media (min-width: 1500px) {
+    @include dynamictext(112.5%, 36, 18, 1500px, 3000, 1500)
+  }
+
+}
+
+.footer_socials {
+  margin-top: 60px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+
+.footer_adress {
+  font-size: 13px;
+  color: $colorText;
+  text-transform: uppercase;
+  line-height: 1.077;
+  margin: 10% 0;
+
+  @media (min-width: 1500px) {
+    @include dynamictext(81.25%, 26, 13, 1500px, 3000, 1500)
+  }
+
+}
+
+.footer_contacts {
+  font-size: 13px;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1.077;
+  margin: 10% 0;
+
+  @media (min-width: 1500px) {
+    @include dynamictext(81.25%, 26, 13, 1500px, 3000, 1500)
+  }
+
+}
+
+.footer_tel, .footer_mail {
+  color: $colorText;
+  line-height: 1.077;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 500ms;
+  transition-property: color;
+
+
+  &:hover {
+    color: $activTextColor;
+  }
+}
+
+.footer_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer_copy {
+  font-size: 12px;
+  color: $colorText;
+  line-height: 1.8;
+  text-align: center;
+  flex-basis: 100%;
+  margin: 9% 0 7% 0;
+
+  @media (min-width: 1500px) {
+    @include dynamictext(75%, 24, 12, 1500px, 3000, 1500)
+  }
+}
+
+@media (max-width: 1500px) {
+  .footer_right {
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .footer_map {
+    padding-bottom: 75%;
+  }
+
+  .footer_left {
+    margin-left: 5%;
+  }
+
+  .footer_right {
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .footer_info {
+    display: block;
+  }
+
+  .footer_left {
+    text-align: center;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+
+  .footer_right {
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .footer_logo {
+    margin: 0 auto;
+  }
+
+  .footer_socials {
+    margin-left: 0;
+    justify-content: center;
+  }
+}

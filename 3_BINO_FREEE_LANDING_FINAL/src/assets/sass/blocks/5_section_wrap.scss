@@ -1,0 +1,41 @@
+.section-wrap {
+  position: relative;
+
+  .section-wrap_icon {
+
+    a {
+      width: 64px;
+      height: 64px;
+      border: 5px solid #514a41;
+      position: absolute;
+      left: 50%;
+      bottom: 8%;
+      transform: translate(-55%, 15px);
+      z-index: 2;
+      border-radius: 50%;
+      background-color: $white-gray;
+
+
+      &:hover {
+
+        .section-wrap__img {
+
+          animation-name: rotate;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+
+  }
+
+  .section-wrap__img {
+    width: 30px;
+    height: 30px;
+    fill: $red;
+    left: 50%;
+    top: 50%;
+    transform: translate(60%, 50%);
+  }
+
+}

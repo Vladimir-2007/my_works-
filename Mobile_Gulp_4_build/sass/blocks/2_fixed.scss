@@ -1,0 +1,151 @@
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: white;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, .8);
+  width: 100%;
+}
+
+.fixed_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.fixed_humburger {
+  flex-basis: 24px;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-right: 11.3%;
+
+  span {
+    display: block;
+    background-color: $primary;
+    height: 2px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 4px;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+      width: 75%;
+      margin-left: auto;
+    }
+  }
+}
+
+.fixed_repair, .fixed_map {
+  background: url("../img/repair.svg") left center no-repeat;
+  padding: 24px 0 24px 48px;
+
+  p {
+    margin: 0;
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(21px);
+  }
+
+  span {
+    display: block;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(16px);
+  }
+}
+
+.fixed_phone {
+  margin-left: auto;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $white;
+  }
+
+  img {
+    display: block;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+.fixed_map {
+  background-image: url("../img/map.png");
+  display: none;
+}
+
+.fixed_btn {
+  @include btn {
+    display: none;
+    margin-left: 24px;
+    max-width: 164px;
+  }
+}
+
+.fixed_callback {
+  display: none;
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(16px);
+  margin-left: 24px;
+}
+
+@media (min-width: 480px) {
+  .fixed_humburger {
+    margin-right: 5%;
+  }
+
+  .fixed_repair {
+    margin-right: 7%;
+  }
+
+  .fixed_map {
+    display: block;
+  }
+
+}
+
+@media (min-width: 680px) {
+  .fixed_phone {
+    img {
+      display: none;
+    }
+
+    span {
+      display: block;
+      font-size: px-to-rem(24px);
+      line-height: px-to-rem(28px);
+
+    }
+  }
+}
+
+@media (min-width: 880px) {
+  .fixed_btn {
+    display: block;
+
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .fixed_callback {
+    display: block;
+  }
+
+  .fixed_humburger {
+    position: relative;
+
+    &::after {
+      content: "Меню";
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(16px);
+      position: absolute;
+      right: -45px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

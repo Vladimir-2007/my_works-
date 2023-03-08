@@ -1,0 +1,567 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  }
+
+.projects_element_one {
+  background-color: $primary_yellow;
+  grid-column: span 5;
+  grid-row: span 2;
+  position: relative;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" hight="100%"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1"/></svg>');
+  }
+
+  .projects_titel {
+    font-size: 48px;
+    color: $white;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: normal;
+    margin: 12.9% 0 34.4% 46.2%;
+
+    @media (min-width: 1500px) {
+      @include dynamictext(300%, 96, 48, 1500px, 3000, 1500)
+    }
+  }
+
+  .projects_links {
+    margin-top: 36.5%;
+    margin-left: calc(27.9% - 25px);
+    margin-bottom: 12.9%;
+    position: relative;
+    z-index: 1;
+  }
+
+}
+
+.projects_element_two {
+  background: url("../img/image2.png") right top no-repeat $white;
+  background-size: cover;
+  grid-column: span 6;
+  grid-row: span 2;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url('../img/image2-2x.png');
+  }
+
+  .projects_info {
+    margin-left: 17.5%;
+    margin-top: 15.7%;
+  }
+
+  .projects_counter {
+    margin-left: 19.2%;
+    margin-top: 11.4%;
+    margin-bottom: 12.2%;
+  }
+}
+
+.projects_element_three {
+  background: url("../img/image3.png") left center no-repeat $bg_three;
+  background-size: 100%;
+  grid-column: span 5;
+  grid-row: span 1;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url('../img/image3-2x.png');
+  }
+
+  .projects_like {
+    margin-top: 17.5%;
+  }
+
+  .projects_description {
+    max-width: 39%;
+  }
+
+  .projects_info {
+    margin-left: 8.6%;
+    margin-top: 7.5%;
+  }
+
+  .projects_counter {
+    margin-left: 8.6%;
+    margin-top: 4%;
+    margin-bottom: 4.5%;
+  }
+}
+
+.projects_element_four {
+  background: url("../img/image4.png") center top no-repeat $bg_four;
+  background-size: 100%;
+  grid-column: span 5;
+  grid-row: span 2;
+  padding-top: 72%;
+  display: flex;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url('../img/image4-2x.png');
+  }
+
+
+
+  .projects_counter {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+    margin-right: 3%;
+    margin-bottom: 3%;
+  }
+
+  .projects_like {
+    margin-top: 0;
+    margin-left: 5%;
+  }
+
+  .projects_info {
+    margin-left: 12.9%;
+    margin-right: 4.3%;
+    margin-bottom: 7.5%;
+  }
+
+}
+
+.projects_element_five {
+  background: url("../img/image5.png") center top no-repeat;
+  background-size: cover;
+  grid-column: span 3;
+  grid-row: span 2;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url('../img/image5-2x.png');
+  }
+
+  .projects_info {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 13%;
+  }
+
+  .projects_counter {
+    margin-left: 10%;
+    margin-bottom: 70%;
+  }
+
+  .projects_like {
+    margin-top: 9.2%;
+  }
+
+  .projects_view {
+    color: $white;
+
+
+    &:hover {
+
+      span {
+        border-color: $white;
+      }
+    }
+  }
+
+  .projects_description, .projects_name {
+    color: $white;
+  }
+
+  .like_btn {
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  .like_counts {
+    color: #fe7c7c;
+  }
+}
+
+.projects_element_six {
+  background: url("../img/image6.png") center top no-repeat $bg_six;
+  background-size: cover;
+  grid-column: span 8;
+  grid-row: span 2;
+  display: flex;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url('../img/image6-2x.png');
+  }
+
+  .projects_info {
+    margin-left: 48.1%;
+    margin-top: 12.1%;
+    margin-bottom: 4%;
+  }
+
+  .projects_counter {
+    margin-left: 4%;
+    margin-top: 12.1%;
+    margin-bottom: 4%;
+
+  }
+
+  .projects_like {
+    margin-top: 12.5%;
+  }
+
+}
+
+.projects_element_seven {
+  background: url("../img/image7.png") left top no-repeat $white;
+  background-size: 100%;
+  grid-column: span 5;
+  grid-row: span 1;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url('../img/image7-2x.png');
+  }
+
+  .projects_info {
+    margin-left: 52.6%;
+    margin-top: 10.7%;
+  }
+
+  .projects_counter {
+    margin-left: 52.6%;
+    margin-top: 5%;
+    margin-bottom: 5.3%;
+  }
+
+  .projects_like {
+    margin-top: 9.1%;
+  }
+
+}
+
+.projects_element_eight {
+  background: url("../img/image8.png") left top no-repeat $bg_eight;
+  background-size: 100%;
+  grid-column: span 8;
+  grid-row: span 1;
+  display: flex;
+  padding-top: 27.2%;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url('../img/image8-2x.png');
+  }
+
+  .projects_info {
+    margin-left: 20.4%;
+    margin-bottom: 2.7%;
+  }
+
+  .projects_counter {
+    display: flex;
+    margin-top: 32px;
+    margin-left: 6.1%;
+    margin-bottom: 2.7%;
+    align-items: flex-start;
+    flex-basis: 210px;
+    justify-content: space-between;
+  }
+
+  .projects_like {
+    margin-top: 0;
+  }
+}
+
+.projects_element_nine {
+  background: url("../img/image9.png") left top no-repeat $bg_nine;
+  background-size: 100%;
+  grid-column: span 3;
+  grid-row: span 1;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url('../img/image9-2x.png');
+  }
+
+  .projects_info {
+    margin-left: 50%;
+    margin-top: 25%;
+    margin-bottom: 8.3%;
+  }
+
+  .projects_counter {
+    margin-left: 50%;
+    margin-bottom: 11.6%;
+
+  }
+
+  .projects_like {
+    margin-top: 14.7%;
+  }
+
+}
+
+.projects_element_ten {
+  background-color:$bg_ten;
+  background-size: cover;
+  grid-column: span 5;
+  grid-row: span 1;
+  position: relative;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" hight="100%"><line x1="0" y1="100%" x2="65%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1"/></svg>');
+  }
+
+  .projects_links {
+    position: relative;
+    z-index: 1;
+    margin-left: calc(21.5% - 25px);
+    margin-bottom: 32.2%;
+  }
+
+  .projects_subtitle {
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: $colorText;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-left: 21.5%;
+    margin-top: 11.8%;
+
+    @media (min-width: 1500px) {
+      @include dynamictext(87.5%, 28, 14, 1500px, 3000, 1500)
+    }
+  }
+}
+
+.projects_name {
+  font-size: 24px;
+  font-family: 'roboto_condensedlight';
+  color: $colorText;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+
+  @media (min-width: 1500px) {
+    @include dynamictext(150%, 48, 24, 1500px, 3000, 1500)
+  }
+}
+
+.projects_description {
+  font-size: 12px;
+  font-family: "roboto_condensedlight";
+  color: $colorText;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
+
+  b {
+    font-family: "roboto_condensedbold";
+    font-weight: normal;
+  }
+
+  @media (min-width: 1500px) {
+    @include dynamictext(75%, 24, 12, 1500px, 3000, 1500)
+  }
+}
+
+.projects_description-lowercase {
+  text-transform: initial;
+}
+
+.projects_view {
+  font-size: 18px;
+  font-family: "roboto_condensedlight";
+  color: $colorText;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: normal;
+  display: inline-block;
+  background: url("/img/arrow-view.svg") left center no-repeat;
+  padding-left: 25px;
+  text-decoration: none;
+
+  @media (min-width: 1500px) {
+    @include dynamictext(112.5%, 36, 18, 1500px, 3000, 1500)
+  }
+
+  span {
+    border-bottom: 1px solid transparent;
+    transition-duration: 500ms;
+    transition-property: border-color;
+  }
+
+  &:hover {
+    span {
+      border-color: $colorText;
+    }
+  }
+}
+
+.projects_like {
+  max-width: 145px;
+  text-align: center;
+  margin: 22.4% 0;
+}
+
+@media (max-width: 980px) {
+
+  .projects_element_one {
+    grid-column: span 7;
+
+    .projects_titel {
+      font-size: 30px;
+    }
+
+    .projects_links {
+      margin-left: 20%;
+    }
+  }
+  .projects_element_two {
+      grid-column: span 9;
+  }
+
+  .projects_element_three {
+    grid-column: span 9;
+    grid-row: span 2;
+    background-size: 100%;
+    padding: 0;
+  }
+
+  .projects_element_four {
+      grid-column: span 7;
+      grid-row: span 2;
+
+      .projects_counter {
+        display: block;
+      }
+
+      .projects_links {
+        margin-top: 15%;
+      }
+    }
+  .projects_element_five {
+    grid-column: span 4;
+  }
+
+  .projects_element_six {
+    grid-column: span 12;
+  }
+
+  .projects_element_seven {
+    grid-column: span 7;
+  }
+
+  .projects_element_eight {
+    grid-column: span 9;
+
+    .projects_counter {
+      display: block;
+    }
+
+    .projects_links {
+      margin-top: 11%;
+    }
+  }
+
+  .projects_element_nine {
+    grid-column: span 9;
+  }
+
+  .projects_element_ten {
+    grid-column: span 7;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .projects_element_tow {
+
+    .projects_info {
+      margin-left: 8%;
+      margin-top: 7%;
+    }
+
+    .projects_counter {
+      margin-left: 9%;
+      margin-top: 7%;
+      margin-bottom: 3%;
+    }
+  }
+
+  .projects_element_three {
+    background-position: -150px 100%;
+  }
+
+  .projects_element_four {
+    display: block;
+
+    .projects_info {
+      margin-left: 8%;
+      margin-right: 2%;
+    }
+
+    .projects_counter {
+      margin-left: 8%;
+    }
+
+    .projects_links {
+      margin-top: 8%;
+    }
+  }
+
+  .projects_element_six {
+    background-position: -70px 20px;
+    display: block;
+
+    .projects_info {
+      margin-left: 40%;
+      margin-right: 6%;
+    }
+
+    .projects_counter {
+      margin-left: 62%;
+      margin-top: 6%;
+    }
+
+  }
+
+  .projects_element_eight {
+    display: block;
+
+    .projects_info {
+      margin-left: 9%;
+    }
+
+    .projects_like {
+      margin-top: 6%;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+
+  .projects {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .projects_element_one, .projects_element_two, .projects_element_three, .projects_element_four, .projects_element_five, .projects_element_six, .projects_element_seven, .projects_element_eight, .projects_element_nine, .projects_element_ten {
+
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .projects_element_three {
+    background-position: 40px 100%;
+  }
+}

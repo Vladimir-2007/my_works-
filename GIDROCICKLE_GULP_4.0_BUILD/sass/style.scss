@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "normalize";
+@import "fonts";
+@import "variables";
+@import "core";
+//@import "normalize";
+@import "plugins/slick";
+@import "plugins/ion.rangeSlider";
+//@import "plugins/jquery.formstyler";
+@import "plugins/jquery.formstyler.theme";
+@import "plugins/jquery.rateyo";
+
+@import "blocks/1_header";
+@import "blocks/2_slider";
+@import "blocks/3_searcch";
+@import "blocks/4_categories";
+@import "blocks/5_product";
+@import "blocks/6_banner";
+@import "blocks/7_footer";
+@import "blocks/8_breadcrumbs";
+@import "blocks/9_catalog";
+@import "blocks/10_aside";
+@import "blocks/11_product-card";
+@import "blocks/12_product-card-tabs";
+@import "blocks/media";
+
+
+
+
+

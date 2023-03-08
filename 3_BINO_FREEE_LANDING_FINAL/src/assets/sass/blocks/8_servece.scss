@@ -1,0 +1,128 @@
+.service {
+  background-color: $servece_bg;
+  max-width: 1920px;
+  margin: 140px auto;
+  padding: 150px 0;
+  position: relative;
+  &::after {
+    content: "";
+    width: 46%;
+    height: 100%;
+    display: block;
+    background: url("../img/services-bg.jpg") right top no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+  .service_block {
+    width: 54%;
+    text-align: right;
+
+  }
+
+  .service_title {
+    font-size: 36px;
+    line-height: 36px;
+    color: $white-gray;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Source Sans Pro";
+    padding-right: 25px;
+    border-right: 6px solid $red;
+    margin-right: 80px;
+    margin-bottom: 80px;
+  }
+  .service_element {
+    max-width: 665px;
+    margin: 55px 80px 55px auto;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 29px;
+      color: $advantages-gray;
+      font-family: "Source Sans Pro";
+
+      &:first-of-type {
+        text-transform: uppercase;
+        color: $red;
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+
+
+    .service_icon {
+      width: 64px;
+      height: 64px;
+      border: 5px solid #514a41;
+      position: absolute;
+      right: -117px;
+      top: 50%;
+      transform: translate(0, -50%);
+      z-index: 1;
+      border-radius: 50%;
+      background-color: $white-gray;
+
+      .servece_img {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        fill: $red;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .service {
+    margin: 50px 0;
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .service {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &::after{
+      display: none;
+    }
+
+    .service_block {
+      width: 100%;
+      text-align: left;
+    }
+
+    .service_title {
+      padding-right: 0;
+      padding-left: 25px;
+      border-right: none;
+      border-left: 6px solid $red;
+     }
+
+    .service_element {
+      max-width: 100%;
+      margin: 25px 0;
+      padding-right: 89px;
+      box-sizing: border-box;
+
+      .service_icon {
+        right: 0;
+      }
+    }
+
+
+  }
+}
